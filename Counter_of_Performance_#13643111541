@@ -1,0 +1,6 @@
+int counter() {
+	#pragma HLS INTERFACE s_axilite port = return
+	static int Counter_of_Preformance;
+	Counter_of_Preformance = Counter_of_Preformance + 1;
+	return Counter_of_Preformance;
+}
